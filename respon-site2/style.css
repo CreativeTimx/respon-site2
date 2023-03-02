@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+
+}
+/* body{
+    background: red;
+} */
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 20px 3%;
+    background: transparent;
+}
+.navlogo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+#navList{
+    display: flex;
+}
+#navList li a{
+    color: #fff;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+
+}
+#navList li a:hover{
+    border-bottom: 2px solid #fff;
+}
+#menu-icon{
+    color: #fff;
+    font-size: 30px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+/* NEW SECTION */
+#hero{
+    padding: 50px 12%;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hero-text{
+    flex-basis: 50%;
+}
+.hero-img{
+    flex-basis: 50%;
+}
+.hero-img img{
+    width: 65%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 90px;
+    line-height: 1;
+    margin: 0 0 45px;
+}
+.hero-text p{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.hero-text a{
+    display: inline-block;
+    color: #fff;
+    background: #4d9559;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translateX(8px);
+}
+.hero-text a.btn{
+    margin-left: 20px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.hero-text a.btn i{
+    vertical-align: middle;
+    margin-right: 5px;
+
+}
+/* new section */
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0 3%;
+}
+.icon a{
+    display: block;
+    color: #fff;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all .50s ease;
+    
+}
+.icon a:hover{
+    color: #4d9559;
+    transform: translateY(-8px);
+}
+.scroll-btn{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+    
+    
+}
+.scroll-btn i{
+    display: block;
+    background: #4d9559;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    transition: all .50s ease;
+}
+.scroll-btn i:hover{
+    transform: translateY(-8px);
+}
+/* Responsive side */
+@media (max-width: 1535px){
+    nav{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icon{
+
+        padding: 0 5%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    #hero{
+        padding: 0 15%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1185px){
+    .hero-text{
+        flex-basis: 40%;
+        transition: .2s;
+    }
+    .hero-img{
+        flex-basis: 40%;
+        transition: .2s;
+    }
+    .hero-text h1{
+        font-size: 80px;
+        transition: .2s;
+    }
+    .hero-text p{
+        font-size: 14px;
+        transition: .2s;
+    }
+    .hero-text a{
+        padding: 10px 20px;
+        transition: .2s;
+    }
+    
+}
+@media (max-width: 990px){
+   
+    #menu-icon{
+        display: block;
+    }
+    #navList{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #4d9559;
+        padding: 50px   20px;
+        transition: all .55s ease;
+    }
+    #navList a{
+        display: block;
+        margin: 7px 0;
+        margin-right: 30px;
+    }
+
+
+}
+@media (max-width: 877px){
+    #hero{
+        padding-top: 15%;
+        
+    }
+    .hero-img{
+        flex-basis: 80%;
+    }
+    .hero-text{
+        flex-basis: 80%;
+    }
+}
+

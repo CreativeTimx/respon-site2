@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goblin()Village</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicon link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remixicon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- googlefont link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav id="navBar">
+        <a href="#" class="navlogo">COC-STATS</a>
+        
+        <ul id="navList">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CLAN</a></li>
+            <li><a href="#">TOWN HALL</a></li>
+            <li><a href="#">TROOPS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    </nav>
+    <!-- NEW SECTION -->
+
+    <section id="hero">
+        <div class="hero-text">
+            <h5>#2 Trending</h5>
+            <h4>Lead Supercell</h4>
+            <h1>GOBLINS</h1>
+            <p>Join millions of players worldwide and you bulid your<br>
+                village, raise a clan, and compete in epic Clan Wars!!
+            </p>
+            <a href="#">Compare</a>
+            <a href="#" class="btn"><i class="ri-play-fill">Watch Game Play</i></a>
+        </div>
+        <div class="hero-img">
+            <img src="data/goblin.png" alt="">
+        </div>
+    </section>
+    <!-- NEW SECTION -->
+    <div class="icon">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-youtube-line"></i></a>
+        <a href="#"><i class="ri-dribbble-line"></i></a>
+    </div>
+
+    <div class="scroll-btn">
+        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+    </div>
+
+
+    <script>
+        const menu = document.getElementById('menu-icon');
+        const navList = document.getElementById('navList');
+
+        navList.style.right = '-100%';
+        menu.onclick = function(){
+            menu.classList.toggle('bx-x') 
+            if(navList.style.right == '-100%'){
+                navList.style.right = '0'
+                
+            }else{
+                navList.style.right = '-100%'
+            }
+        } 
+    </script>
+    
+    
+</body>
+</html>
